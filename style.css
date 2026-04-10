@@ -98,13 +98,14 @@ input:focus {
     top: 64px;
     display: flex;
     flex-direction: column;
-    width: 60px;          /* compact width */
+    width: 70px;          /* compact width */
     overflow-x: hidden;
     background-color: #fff;
     border-right: 1px solid #e0e1e0;
     transition: width 0.3s ease;
     z-index: 5;
     padding-top: 10px;
+    padding-left: 10px;
 }
 
 .sidebar:hover {
@@ -123,11 +124,13 @@ input:focus {
 .sidebar .sidebar-item {
     display: flex;
     align-items: center;
-    padding: 12px;
+    padding: 0 0 0 10px;
+    height: 48px;
+    width: 100%;
     color: #5f6368;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-    border-radius: 0 25px 25px 0; /* rounded right edge */
+    border-radius: 25px 25px 25px 25px; /* rounded right edge */
     margin: 2px 0;
 }
 
@@ -158,6 +161,7 @@ input:focus {
   font-weight: 500;
   z-index: 10;
 }
+
 
 /* MAIN FORM  */
 .form-container {
